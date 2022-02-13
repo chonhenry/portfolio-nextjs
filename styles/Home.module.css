@@ -1,6 +1,4 @@
 .container {
   flex-grow: 1;
   background-color: var(--navy-color);
-  /* width: 100vw; */
-  overflow-x: hidden;
 }

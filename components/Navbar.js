@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
@@ -10,7 +12,9 @@ const Navbar = () => {
         <div className={styles.nav_box}></div>
         <div className={styles.nav_name_title}>
           <span className={styles.nav_name}>Henry Chon</span>
-          <span className={styles.nav_title}>&nbsp;/ Software Engineer</span>
+          <span className={styles.nav_title}>
+            <span className={styles.nav_spacer}>&nbsp;/</span> Software Engineer
+          </span>
         </div>
       </div>
 
@@ -27,7 +31,9 @@ const Navbar = () => {
       <div
         className={styles.nav_btn}
         onClick={() => setActive((prev) => !prev)}
-      ></div>
+      >
+        {active ? <CloseIcon /> : <MenuIcon />}
+      </div>
     </nav>
   );
 };
