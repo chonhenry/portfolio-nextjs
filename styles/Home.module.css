@@ -1,4 +1,101 @@
 .container {
   flex-grow: 1;
-  background-color: var(--navy-color);
+  /* background-color: var(--navy-color); */
+  color: var(--white-color);
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.left {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-1);
+}
+
+.right {
+  width: 60%;
+  background-color: var(--white-color);
+}
+
+.card {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  background-color: var(--color-2);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.first_name,
+.last_name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.divider {
+  background-color: var(--color-3);
+  height: 0.2rem;
+  width: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  word-spacing: 10%;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.card_bottom {
+  background-color: var(--white-color);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.icon {
+  cursor: pointer;
+  color: var(--navy-color);
+}
+
+.icon:first-child {
+  margin-right: 0.5rem;
+}
+
+.icon:last-child {
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .right {
+    height: 40vh;
+  }
+
+  .left {
+    height: 60vh;
+  }
 }
