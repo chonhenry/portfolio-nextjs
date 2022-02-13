@@ -17,12 +17,16 @@
   align-items: center;
   margin-left: 5rem;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav_left:hover {
+  color: var(--green-color);
 }
 
 .nav_box {
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--green-color);
+  display: flex;
+  align-items: center;
 }
 
 .nav_name_title {
@@ -57,6 +61,11 @@
 .nav_menu_item {
   display: inline-block;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav_menu_item:hover {
+  color: var(--green-color);
 }
 
 @media (max-width: 850px) {
