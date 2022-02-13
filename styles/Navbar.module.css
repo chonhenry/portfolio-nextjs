@@ -59,6 +59,10 @@
 }
 
 @media (max-width: 850px) {
+  .navbar {
+    display: block;
+  }
+
   .nav_btn {
     position: absolute;
     display: block;
@@ -80,7 +84,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translateX(100vw);
+    transform: translateY(100%);
     transition: 0.5s;
   }
 
@@ -90,7 +94,7 @@
   }
 
   .nav_right.active {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 
   .nav_menu_item {
