@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className={styles.nav_name_title}>
           <span className={styles.nav_name}>Henry Chon</span>
           <span className={styles.nav_title}>
-            <span className={styles.nav_spacer}>&nbsp;/</span>&nbsp;Software
+            <span className={styles.nav_spacer}>&nbsp;/&nbsp;</span>Software
             Engineer
           </span>
         </div>
