@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import styles from "../styles/Layout.module.css";
 
 const Layout = ({ children }) => {
+  const [active, setActive] = useState(false);
+
   return (
-    <div className={styles.layout}>
-      <Navbar />
+    <div className={styles.layout} style={{ height: active && "100vh" }}>
+      <Navbar active={active} setActive={setActive} />
 
       {children}
 

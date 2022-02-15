@@ -5,7 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import styles from "../styles/Home.module.css";
 import image from "../public/portfolio.jpg";
 import Link from "next/link";
-import { style } from "@mui/system";
+// import resume from "../public/Henry_Chon_Resume.pdf";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.left}></div>
-      <div className={styles.right}>sfv</div>
+      <div className={styles.right}></div>
 
       <div className={styles.content}>
         <div className={styles.card}>
@@ -49,9 +49,7 @@ export default function Home() {
 
         <div className={styles.details}>
           <div className={styles.hello}>Hello</div>
-          <div style={{ fontSize: "1.3rem" }}>
-            {"Here's who I am & what I do"}
-          </div>
+          <div className={styles.subtitle}>{"Here's who I am & what I do"}</div>
           <div className={styles.btns}>
             <Link href="/">
               <a className={styles.btn}>resume</a>
@@ -59,6 +57,14 @@ export default function Home() {
             <Link href="/">
               <a className={styles.btn}>project</a>
             </Link>
+          </div>
+          <div className="">
+            I am a driven software engineer with a passion for programming and
+            solving difficult problems.
+            <br />
+            <br />
+            My goal is to join a company that is truly passionate about what
+            they create and are proud to make the world a better place.
           </div>
         </div>
       </div>

@@ -4,8 +4,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import CodeIcon from "@mui/icons-material/Code";
 import styles from "../styles/Navbar.module.css";
 
-const Navbar = () => {
-  const [active, setActive] = useState(false);
+const Navbar = ({ active, setActive }) => {
+  // const [active, setActive] = useState(false);
 
   return (
     <nav className={styles.navbar}>
