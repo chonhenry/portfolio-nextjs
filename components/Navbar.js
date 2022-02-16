@@ -13,7 +13,7 @@ const Navbar = ({ active, setActive }) => {
           <CodeIcon />
         </div>
         <Link href="/">
-          <a href="">
+          <a>
             <div className={styles.nav_name_title}>
               <span className={styles.nav_name}>Henry Chon</span>
               <span className={styles.nav_title}>
@@ -30,26 +30,17 @@ const Navbar = ({ active, setActive }) => {
           active ? styles.nav_right + " " + styles.active : styles.nav_right
         }
       >
-        <li
-          className={styles.nav_menu_item}
-          onClick={() => setActive((prev) => !prev)}
-        >
+        <li className={styles.nav_menu_item} onClick={() => setActive(false)}>
           <Link href="/">
             <a>About</a>
           </Link>
         </li>
-        <li
-          className={styles.nav_menu_item}
-          onClick={() => setActive((prev) => !prev)}
-        >
+        <li className={styles.nav_menu_item} onClick={() => setActive(false)}>
           <Link href="/projects">
             <a>Projects</a>
           </Link>
         </li>
-        <li
-          className={styles.nav_menu_item}
-          onClick={() => setActive((prev) => !prev)}
-        >
+        <li className={styles.nav_menu_item} onClick={() => setActive(false)}>
           <Link href="/contact">
             <a>Contact</a>
           </Link>

@@ -7,7 +7,10 @@ const Layout = ({ children }) => {
   const [active, setActive] = useState(false);
 
   return (
-    <div className={styles.layout} style={{ height: active && "100vh" }}>
+    <div
+      className={`${styles.layout} ${active ? styles.active : ""}`}
+      // style={{ overflowY: active && "hidden", maxHeight: active && "100vh" }}
+    >
       <Navbar active={active} setActive={setActive} />
 
       {children}
