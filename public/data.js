@@ -2,8 +2,26 @@ import css_gallery from "../public/project-images/css-gallery.png";
 import ig_clone from "../public/project-images/ig_clone.png";
 import chat_app from "../public/project-images/react-chat.png";
 import cryptoapp from "../public/project-images/cryptoapp.png";
+import trello_clone from "../public/project-images/trello-clone.png";
 
 const projects = [
+  {
+    id: 5,
+    name: "Trello Clone",
+    technologies: [
+      "React",
+      "Typescript",
+      "Tailwind-CSS",
+      "MongoDB",
+      "Express.js",
+      "Node.js",
+    ],
+    github: "https://github.com/chonhenry/trello-clone",
+    link: "https://vigorous-lamport-7e0df0.netlify.app/",
+    description: "A Trello clone built with the MERN stack.",
+    image: trello_clone,
+  },
+  ,
   {
     id: 4,
     name: "Cryptocurrency App",
