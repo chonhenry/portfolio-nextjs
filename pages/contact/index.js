@@ -24,12 +24,13 @@ const Contact = () => {
 
     setSending(true);
     setSentSuccess(null);
+
     emailjs
       .sendForm(
-        "service_qhksl69",
-        "template_a8ziqhz",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         e.target,
-        "user_iFuxxOqmYu6MDVZMjsk8n"
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       )
       .then(
         function (response) {
@@ -50,7 +51,7 @@ const Contact = () => {
         <div className={styles.heading}>{"Let's Connect"}</div>
       </div>
 
-      <p  className={styles.text}>
+      <p className={styles.text}>
         I&apos;m available for a developer position and would love to connect.
         If you have any questions or requests, don&apos;t hesitate to reach out.
       </p>
