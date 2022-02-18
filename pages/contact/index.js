@@ -22,10 +22,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
-    console.log(process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
-    console.log(process.env.NEXT_PUBLIC_EMAILJS_USER_ID);
-
     setSending(true);
     setSentSuccess(null);
 
@@ -42,7 +38,7 @@ const Contact = () => {
           clearForm(true);
         },
         function (error) {
-          console.log("FAILED...", error);
+          // console.log("FAILED...", error);
           clearForm(false);
         }
       );
