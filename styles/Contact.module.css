@@ -23,6 +23,12 @@
   font-weight: 700;
 }
 
+.text {
+  width: 45rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
 .contact_box {
   background-color: var(--white-color);
   width: 45rem;
@@ -69,6 +75,11 @@
   font-weight: bold;
 }
 
+.textarea:hover {
+  border-color: var(--color-3);
+  border-width: 2px;
+}
+
 .textarea:focus {
   outline: none;
 }
@@ -80,7 +91,7 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-top: 1.2rem;
-  /* margin-bottom: 1.2rem; */
+  margin-right: 1rem;
   cursor: pointer;
   border-radius: 10rem;
   transition: 0.3s;
@@ -95,10 +106,28 @@
   background-color: transparent;
 }
 
+.sentSuccessfully {
+  color: var(--color-3);
+}
+
+.sentFail {
+  color: red;
+}
+
 @media (max-width: 760px) {
   .contact_box {
     width: 90vw;
     padding: 1.5rem;
+  }
+
+  .text {
+    width: 90vw;
+  }
+
+  .sentSuccessfully,
+  .sentFail {
+    margin-top: 0.5rem;
+    display: block;
   }
 }
 
