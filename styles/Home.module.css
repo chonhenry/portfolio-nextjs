@@ -133,13 +133,13 @@
 
 .btn:first-child:hover {
   background-color: transparent;
-  color: #000;
+  color: var(--color-3);
 }
 
 .btn:last-child {
   background-color: transparent;
-  color: black;
-  border: 1px solid #000;
+  color: var(--color-3);
+  border: 1px solid var(--color-3);
 }
 
 .btn:last-child:hover {

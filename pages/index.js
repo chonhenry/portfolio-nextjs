@@ -51,10 +51,12 @@ export default function Home() {
           <div className={styles.hello}>Hello</div>
           <div className={styles.subtitle}>{"Here's who I am & what I do"}</div>
           <div className={styles.btns}>
-            <Link href="/">
-              <a className={styles.btn}>resume</a>
+            <Link href="/Henry_Chon_Resume.pdf">
+              <a className={styles.btn} target="_blank">
+                resume
+              </a>
             </Link>
-            <Link href="/">
+            <Link href="/projects">
               <a className={styles.btn}>project</a>
             </Link>
           </div>
